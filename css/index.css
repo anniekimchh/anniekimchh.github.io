@@ -177,7 +177,6 @@ body,h1,h2,h3,h4,h5,h6 {
   line-height: 2px;
   text-align: center;
   font-family: "Karma", sans-serif;
-  display: inline-block;
   white-space: nowrap;
   /* Starting position */
   -moz-transform:translateX(100%);
