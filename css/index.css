@@ -132,3 +132,86 @@ body,h1,h2,h3,h4,h5,h6 {
       border-radius: 12px;
     }
   
+#ig:hover{
+  opacity: 0.4;
+}
+
+#copyRight{
+  text-align: center;
+  background-color: aliceblue;
+  bottom:0; width:100%;
+  display: block;
+  
+}
+
+#custom{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#custom:hover{
+  opacity: 0.4;
+}
+
+.banner {
+  padding: 0.1px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  position: relative;
+}
+
+/* Banner */
+.example1 {
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: pink;  
+ }
+ .example1 h1 {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 2px;
+  text-align: center;
+  font-family: "Karma", sans-serif;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);	
+  transform:translateX(100%);
+  /* Apply animation to this element */	
+  -moz-animation: example1 15s linear infinite;
+  -webkit-animation: example1 15s linear infinite;
+  animation: example1 15s linear infinite;
+ }
+ /* Move it (define the animation) */
+ @-moz-keyframes example1 {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ }
+ @-webkit-keyframes example1 {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ @keyframes example1 {
+  0%   { 
+  -moz-transform: translateX(100%); /* Firefox bug fix */
+  -webkit-transform: translateX(100%); /* Firefox bug fix */
+  transform: translateX(100%); 		
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Firefox bug fix */
+  -webkit-transform: translateX(-100%); /* Firefox bug fix */
+  transform: translateX(-100%); 
+  }
+ }
+
+ .example1 span {
+   margin-left: 15px;
+ }
+
+ #close:hover{
+  opacity: 0.3;
+ }

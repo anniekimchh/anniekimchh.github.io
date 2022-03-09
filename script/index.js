@@ -26,8 +26,15 @@ function w3_open() {
     }
   }
   
-  var span = document.getElementsByClassName("close")[0];
-  
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+var closeButton = document.getElementById('close')
+
+window.onload = document.getElementById('close').addEventListener("click", function(){
+  this.parentElement.style.display = "none";
+})
